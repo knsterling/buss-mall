@@ -1,44 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bus Mall</title>
-
+    <meta charset="utf-8">
+    <title>Bus Mall Demo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 
 <body>
-    <header>
-        <section id="all_products">
-            <div id="bag">
-                <img id="bag_img" src="assets/bag.jpeg" alt="Bag">
-                <p id="bag_img_p">Bag</p>
-            </div>
-
-            <div id="banana">
-                <img id="banana_img" src="assets/banana.jpeg" alt="Bananas">
-                <p id="banana_img_p">Banana</p>
-            </div>
-
-            <div id="bathroom">
-                <img id="bathroom_img" src="assets/bathroom.jpeg" alt="Bathroom">
-                <p id="bathroom_img_p">Bathroom</p>
-            </div>
-        </section>
+    <header class='container'>
+        <p>Click fave plz. kthx!</p>
     </header>
-    <div id="imagesDiv">
-        <img class="imagesDiv" src="" alt="" id="firstImage">
-        <img class="imagesDiv" src="" alt="" id="secondImage">
-        <img class="imagesDiv" src="" alt="" id="thirdImage">
-    </div>
-
-    <ul id="resultsList"></ul>
-
-    <button id"showResults" disabled>Show Results</button>
-
-    <script src="app.js"></script>
+    <section id='images' class='container'>
+        <img src="" alt="" id='img1' class='four columns'>
+        <img src="" alt="" id='img2' class='four columns'>
+        <img src="" alt="" id='img3' class='four columns'>
+    </section>
+    <section class='container'>
+        <button type="button" name="button" id='showResults' hidden>View Results</button>
+        <button type='button' name='reset' id='reset' hidden>Reset</button>
+        <section id='results'>
+        </section>
+    </section>
+    <script type="text/javascript" src='js/app.js'></script>
 </body>
 
 </html>
